@@ -317,7 +317,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px 180px 50px;
+  margin: 0 50px 0 50px;
 }
 /* потребуется, чтобы выравнивать блок с адресом */
 .footer__address {

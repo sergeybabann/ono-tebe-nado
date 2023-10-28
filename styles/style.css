@@ -10,7 +10,7 @@
   width: 1340px;
   display: flex;
   justify-content: space-between;
-  margin: 92px 49px 92px 51px;
+  margin: 0 49px 92px 51px;
 }
 
 /* потребуется, чтобы выравнивать блок с адресом */

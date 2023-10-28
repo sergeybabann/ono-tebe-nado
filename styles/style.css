@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   margin: 92px 49px 92px 51px;
-  background-color: skyblue;
 }
 
 /* потребуется, чтобы выравнивать блок с адресом */
@@ -41,7 +40,6 @@
   align-items: center;
   gap: 30px;
   list-style: none;
-  background-color: green;
 }
 /* пункт списка ссылок */
 .header__links-list-item {
@@ -109,7 +107,6 @@
 .aligned-text__right {
   display: block;
   text-align: right;
-  background-color: red;
 }
 
 /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
@@ -123,7 +120,6 @@
 
 .letter-spacing-extended-right {
   letter-spacing: 60px;
-  background-color: blue;
 }
 /*  класс для обнуления общего межбуквенного расстояния для последней буквы */
 .no-letter-spacing {
@@ -267,7 +263,6 @@
 .about__logo-container {
   display: flex;
   justify-content: center;
-  background-color: rgba(255, 0, 0, 0.5);
 }
 /* контейнер с логотипом */
 .about__logo {
@@ -288,7 +283,6 @@
 .about__description-container {
   display: flex;
   flex-direction: column;
-  background-color: rgba(72, 118, 255, 0.5);
 }
 /* заголовок секции */
 .about__title {
@@ -308,7 +302,6 @@
   color: #000000;
   font-size: 20px;
   font-weight: 400;
-  background-color: rgba(72, 118, 255, 0.3);
 }
 /* стили для параграфов блока с текстом */
 .about__text-p {
@@ -325,7 +318,6 @@
   display: flex;
   justify-content: space-between;
   margin: 0 50px 90px 50px;
-  background-color: rgba(255, 0, 0, 0.5);
 }
 /* потребуется, чтобы выравнивать блок с адресом */
 .footer__address {
@@ -348,7 +340,6 @@
 .footer__menu {
   display: flex;
   justify-content: center;
-  background-color: green;
 }
 /* список пунктов меню */
 .footer__menu-list {

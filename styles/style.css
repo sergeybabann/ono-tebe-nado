@@ -78,6 +78,7 @@
   object-fit: cover;
   margin-bottom: 180px;
   z-index: 0;
+  position: relative;
 }
 .cover__title {
   letter-spacing: 30px;
@@ -86,7 +87,7 @@
   color: #ffffff;
   padding: 165px 50px 135px 50px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-transform: uppercase;
 }
 /* классы для выравнивания строк текста и превращения их в блочный элемент */
@@ -191,6 +192,7 @@
   height: 100%;
   min-height: 450px;
   width: 430px;
+  position: relative;
 }
 /* контейнер для контента карточки */
 .card__content {
@@ -243,6 +245,8 @@
   background-color: rgb(0 0 0 / 0.6);
   height: 100%;
   width: 100%;
+  z-index: 1;
+  position: absolute;
 }
 
 /*--------------- ABOUT SECTION ---------------*/
@@ -328,6 +332,12 @@
   font-family: 'Raleway', san-serif;
 }
 
+<<<<<<< HEAD
+=======
+.footer__address a {
+  width: 135px;
+}
+>>>>>>> 5381dc646d4665c4f10b8d795ab69fbaf3748c18
 /*  блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом */
 .footer__menu {
   display: flex;

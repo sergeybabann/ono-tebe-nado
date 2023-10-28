@@ -28,8 +28,6 @@
 }
 
 .header__address a {
-  text-decoration: none;
-  border-bottom: 1px solid black;
   width: 135px;
 }
 /* контейнер навигации */

@@ -26,9 +26,6 @@
   font-family: 'Raleway', san-serif;
 }
 
-.header__address a {
-  width: 135px;
-}
 /* контейнер навигации */
 .header__menu {
   display: flex;
@@ -83,7 +80,6 @@
   object-fit: cover;
   margin-bottom: 180px;
   z-index: 0;
-  position: relative;
 }
 
 .cover__title {
@@ -254,7 +250,6 @@
   height: 100%;
   width: 100%;
   z-index: 1;
-  position: absolute;
 }
 
 /*--------------- ABOUT SECTION ---------------*/
@@ -340,9 +335,6 @@
   font-family: 'Raleway', san-serif;
 }
 
-.footer__address a {
-  width: 135px;
-}
 /*  блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом */
 .footer__menu {
   display: flex;

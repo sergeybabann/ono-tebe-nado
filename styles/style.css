@@ -79,6 +79,7 @@
   background-image: url('../images/cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: contain;
   margin-bottom: 180px;
   z-index: 0;
 }

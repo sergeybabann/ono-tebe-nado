@@ -10,7 +10,8 @@
   width: 1340px;
   display: flex;
   justify-content: space-between;
-  margin: 0 49px 92px 51px;
+  margin: 92px 49px 92px 51px;
+  padding-bottom: 4px;
 }
 
 /* потребуется, чтобы выравнивать блок с адресом */
@@ -23,7 +24,6 @@
   color: #000000;
   line-height: 24.3px;
   font-family: 'Raleway', san-serif;
-  padding: 4px;
 }
 
 .header__address a {
@@ -98,15 +98,19 @@
 .aligned-text__left {
   display: block;
   text-align: left;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  max-height: 115px;
 }
 .aligned-text__center {
   display: block;
   text-align: center;
+  max-height: 100px;
+  margin: 0 0 20px 0;
 }
 .aligned-text__right {
   display: block;
   text-align: right;
+  max-height: 100px;
 }
 
 /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
@@ -317,7 +321,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px 0 50px;
+  margin: 0 50px 90px 50px;
 }
 /* потребуется, чтобы выравнивать блок с адресом */
 .footer__address {

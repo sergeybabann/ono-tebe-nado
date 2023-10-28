@@ -13,7 +13,6 @@
   margin: 92px 49px 92px 51px;
   padding-bottom: 4px;
 }
-
 /* потребуется, чтобы выравнивать блок с адресом */
 .header__address {
   display: flex;
@@ -25,13 +24,10 @@
   line-height: 24.3px;
   font-family: 'Raleway', san-serif;
 }
-
-.header__address a {
-  width: 135px;
-}
 /* контейнер навигации */
 .header__menu {
   display: flex;
+  padding-bottom: 4px;
 }
 /* список ссылок */
 .header__links-list {
@@ -79,11 +75,10 @@
   background-image: url('../images/cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: 180px;
   z-index: 0;
 }
-
 .cover__title {
   letter-spacing: 30px;
   font-size: 100px;
@@ -94,7 +89,6 @@
   z-index: 1;
   text-transform: uppercase;
 }
-
 /* классы для выравнивания строк текста и превращения их в блочный элемент */
 .aligned-text__left {
   display: block;
@@ -113,7 +107,6 @@
   text-align: right;
   max-height: 100px;
 }
-
 /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
 .letter-spacing-extended-left {
   letter-spacing: 60px;
@@ -298,7 +291,6 @@
   height: 240px;
   font-size: 40px;
   font-weight: 700px;
-  margin-bottom: 5px;
 }
 /* блок для текстов секции */
 .about__text {
@@ -336,11 +328,6 @@
   font-family: 'Raleway', san-serif;
 }
 
-.footer__address a {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-  width: 135px;
-}
 /*  блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом */
 .footer__menu {
   display: flex;

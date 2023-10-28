@@ -1,15 +1,396 @@
 /* место для вашего кода */
+/* .body {
+  margin: auto;
+  max-width: 1440px;
+} */
+
+/*--------------- HEADER ---------------*/
+/* вся шапка */
 .header {
+  width: 1340px;
+  display: flex;
+  justify-content: space-between;
+  margin: 92px 49px 92px 51px;
+  background-color: skyblue;
 }
 
+/* потребуется, чтобы выравнивать блок с адресом */
+.header__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 24.3px;
+  font-family: 'Raleway', san-serif;
+  padding: 4px;
+}
+
+.header__address a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  width: 135px;
+}
+/* контейнер навигации */
+.header__menu {
+  display: flex;
+}
+/* список ссылок */
+.header__links-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  background-color: green;
+}
+/* пункт списка ссылок */
+.header__links-list-item {
+  list-style: circle;
+}
+/* класс, чтобы сделать ссылку без кружочка перед ней */
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+/* ссылка */
+.header__link {
+  font-size: 18px;
+  font-weight: 400; /* regular */
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding: 1px;
+}
+/* активная ссылка */
+.header__link_active:active {
+  text-decoration: none;
+}
+/* контейнер логотипа */
+.header__logo {
+  width: 148px;
+  height: 105px;
+  margin-right: 142px;
+}
+/* картинка с логотипом */
+.header__logo-image {
+  height: 100%;
+  width: 100%;
+}
+
+/*--------------- COVER SECTION ---------------*/
 .cover {
+  display: flex;
+  background-image: url('../images/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 180px;
+  z-index: 0;
 }
 
+.cover__title {
+  letter-spacing: 30px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 165px 50px 135px 50px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+/* классы для выравнивания строк текста и превращения их в блочный элемент */
+.aligned-text__left {
+  display: block;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+.aligned-text__center {
+  display: block;
+  text-align: center;
+}
+.aligned-text__right {
+  display: block;
+  text-align: right;
+  background-color: red;
+}
+
+/* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
+.letter-spacing-extended-left {
+  letter-spacing: 60px;
+}
+
+.letter-spacing-extended-center {
+  letter-spacing: 60px;
+}
+
+.letter-spacing-extended-right {
+  letter-spacing: 60px;
+  background-color: blue;
+}
+/*  класс для обнуления общего межбуквенного расстояния для последней буквы */
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+/* контейнер для подзаголовка и кнопки */
+.cover__description {
+  display: flex;
+  justify-content: end;
+  margin: 0 50px 50px 0;
+  gap: 78px;
+}
+/* текст подзаголовка */
+.cover__description-text {
+  display: flex;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  word-spacing: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+  word-spacing: 22px;
+}
+/* кнопка "Сделать ставку" */
+.bet-button {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 'Regular';
+  background-color: transparent;
+  padding: 11px 25px 12px 28px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+}
+
+/*--------------- LOTS SECTION ---------------*/
 .lots {
+  margin: 0 0 180px 0;
+}
+/* заголовок секции */
+.lots__heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 27px 90px;
+}
+/* список карточек */
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 25px;
+  padding: 0 50px 0 50px;
+  margin-bottom: 30px;
+}
+/* пункт списка карточки */
+.lots__card-list-item {
+  display: flex;
+  justify-content: start;
+  flex-grow: 1;
+  max-width: 430px;
+  min-height: 450px;
+}
+/* ссылка, обрамляющая карточку */
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+/* карточка */
+.card {
+  height: 100%;
+  height: 450px;
+  width: 430px;
+}
+/* контейнер для контента карточки */
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* заголовок карточки */
+.card__title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 50px 40px 0 40px;
+}
+/* текст карточки */
+.card__text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 40px 50px 40px;
+}
+/* ссылка «Посмотреть больше» */
+.lots__look-more-link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 0 0 0 90px;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding: 1px;
+}
+/* классы, чтобы задать определённый фон каждой из карточек */
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+  background-size: cover;
+}
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+  background-size: cover;
+}
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+  background-size: cover;
+}
+/* он уже есть у вас в коде полупрозрачный блок поверх секции */
+.overlay {
+  background-color: rgb(0 0 0 / 0.6);
+  height: 100%;
+  width: 100%;
 }
 
+/*--------------- ABOUT SECTION ---------------*/
+/* вся секция */
 .about {
+  margin: 0 50px 180px 50px;
+}
+/* класс для колонок */
+.about__column {
+  display: grid;
+  grid-template-columns: 430px 885px;
+  grid-template-rows: 487px;
+  column-gap: 25px;
+}
+/* контейнер для контейнеа логотипа */
+.about__logo-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+/* контейнер с логотипом */
+.about__logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+/* изображение логотипа */
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+/* контейнер для секции заголовка с текстом */
+.about__description-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(72, 118, 255, 0.5);
+}
+/* заголовок секции */
+.about__title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-transform: uppercase;
+  height: 240px;
+  font-size: 40px;
+  font-weight: 700px;
+  margin-bottom: 5px;
+}
+/* блок для текстов секции */
+.about__text {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(72, 118, 255, 0.3);
+}
+/* стили для параграфов блока с текстом */
+.about__text-p {
+  display: flex;
+  margin-bottom: 25px;
+}
+.about__text-p:last-child {
+  margin-bottom: 0px;
 }
 
+/*--------------- FOOTER ---------------*/
+/* подвал */
 .footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px 90px 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+/* потребуется, чтобы выравнивать блок с адресом */
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 24.3px;
+  font-family: 'Raleway', san-serif;
+}
+
+.footer__address a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  width: 135px;
+}
+/*  блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом */
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+/* список пунктов меню */
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  text-align: center;
+}
+/* пункт списка меню */
+.footer__menu-list-item {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  list-style: none;
+  text-transform: lowercase;
+}
+/* ссылка меню */
+.footer__menu-link {
+}
+/* активная ссылка меню (без подчеркивания) */
+.footer__menu-link_active:active {
+  text-decoration: none;
+}
+/* список ссылок на социальные сети. Можно не добавлять тег <nav>, потому что это ссылки
+на внешние ресурсы */
+.footer__social-list {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 48px;
+}
+/* пункт списка ссылок на социальные сети */
+.footer__social-list-item {
+}
+/* ссылка на социальные сети */
+.footer__social-link {
+}
+/* иконка социальной сети */
+.footer__social-icon {
+  height: 48px;
 }

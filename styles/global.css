@@ -5,12 +5,11 @@
 }
 
 body {
-  min-width: 1100px;
-  margin: 0;
+  margin: auto;
   padding: 0;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  min-width: 1100px;
   max-width: 1440px;
-  max-height: 2844px;
 }
 
 h1,
@@ -39,4 +38,10 @@ img {
 
 address {
   all: initial;
+  max-width: 240px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 24.3px;
+  font-family: 'Raleway', 'Arial', sans-serif;
 }

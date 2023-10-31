@@ -1,141 +1,119 @@
-/* место для вашего кода */
-/* .body {
-  margin: auto;
-  max-width: 1440px;
-} */
+/*--------------- ШАПКА САЙТА ---------------*/
 
-/*--------------- HEADER ---------------*/
-/* вся шапка */
 .header {
-  width: 1340px;
+  /* вся шапка */
+  max-width: 1340px;
   display: flex;
   justify-content: space-between;
   margin: 92px 49px 92px 51px;
   padding-bottom: 4px;
 }
-/* потребуется, чтобы выравнивать блок с адресом */
-.header__address {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  font-size: 18px;
-  font-weight: 400;
-  color: #000000;
-  line-height: 24.3px;
-  font-family: 'Raleway', san-serif;
-}
-<<<<<<< HEAD
 
-=======
->>>>>>> 7d3f3552237d95098315b52574b47a20fd85da7c
-/* контейнер навигации */
 .header__menu {
+  /* контейнер навигации */
   display: flex;
   padding-bottom: 4px;
 }
-/* список ссылок */
+
 .header__links-list {
+  /* список ссылок */
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 30px;
-  list-style: none;
+  margin-top: 5px;
 }
-/* пункт списка ссылок */
+
 .header__links-list-item {
+  /* пункт списка ссылок */
   list-style: circle;
 }
-/* класс, чтобы сделать ссылку без кружочка перед ней */
+
 .header__links-list-item_no-bullit {
+  /* класс, чтобы сделать ссылку без кружочка перед ней */
   list-style: none;
 }
-/* ссылка */
-.header__link {
-  font-size: 18px;
-  font-weight: 400; /* regular */
-  text-decoration: none;
-  border-bottom: 1px solid black;
-  padding: 1px;
-}
-/* активная ссылка */
-.header__link_active:active {
-  text-decoration: none;
-}
-/* контейнер логотипа */
+
 .header__logo {
+  /* контейнер логотипа */
   width: 148px;
   height: 105px;
-  margin-right: 142px;
+  margin-right: 149px;
 }
-/* картинка с логотипом */
+
 .header__logo-image {
+  /* картинка с логотипом */
   height: 100%;
   width: 100%;
 }
 
 /*--------------- COVER SECTION ---------------*/
+/* вся секция */
 .cover {
   display: flex;
+  flex-direction: column;
   background-image: url('../images/cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
   margin-bottom: 180px;
+  background-position: center;
+  position: relative;
   z-index: 0;
+  padding: 165px 50px 50px 50px;
 }
+
 .cover__title {
+  /* заговолок секции */
   letter-spacing: 30px;
   font-size: 100px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
-  padding: 165px 50px 135px 50px;
-  position: relative;
   z-index: 2;
   text-transform: uppercase;
 }
+
 /* классы для выравнивания строк текста и превращения их в блочный элемент */
 .aligned-text__left {
   display: block;
   text-align: left;
-  margin: 0 0 20px 0;
-  max-height: 115px;
+  line-height: 115%;
+  margin-bottom: 20px;
 }
+
 .aligned-text__center {
   display: block;
   text-align: center;
-  max-height: 100px;
-  margin: 0 0 20px 0;
+  line-height: 100%;
+  margin-bottom: 20px;
 }
+
 .aligned-text__right {
   display: block;
   text-align: right;
-  max-height: 100px;
+  line-height: 100%;
+  margin-bottom: 135px;
 }
-/* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
-.letter-spacing-extended-left {
+
+.letter-spacing-extended {
+  /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты */
   letter-spacing: 60px;
 }
 
-.letter-spacing-extended-center {
-  letter-spacing: 60px;
-}
-
-.letter-spacing-extended-right {
-  letter-spacing: 60px;
-}
-/*  класс для обнуления общего межбуквенного расстояния для последней буквы */
 .no-letter-spacing {
-  letter-spacing: 0;
+  /*  класс для обнуления общего межбуквенного расстояния для последней буквы */
+  letter-spacing: initial;
 }
-/* контейнер для подзаголовка и кнопки */
+
 .cover__description {
+  /* контейнер для подзаголовка и кнопки */
   display: flex;
   justify-content: end;
-  margin: 0 50px 50px 0;
-  gap: 78px;
+  gap: 79px;
+  z-index: 2;
 }
-/* текст подзаголовка */
+
 .cover__description-text {
+  /* текст подзаголовка */
   display: flex;
   color: #ffffff;
   font-size: 22px;
@@ -143,250 +121,309 @@
   word-spacing: 20px;
   align-items: center;
   text-transform: uppercase;
-  margin: 0 0 7px 0;
+  word-spacing: 16px;
+  line-height: 28%;
+  min-width: 631px;
 }
-/* кнопка "Сделать ставку" */
+
+.accent__div-1 {
+  /* span 1 для текста подзаголовка */
+  word-spacing: 16px;
+  margin-right: 24px;
+}
+
+.accent__div-2 {
+  /* span 2 для текста подзаголовка */
+  word-spacing: 17px;
+  margin-right: 16px;
+}
+
+.accent__div-3 {
+  /* span 3 для текста подзаголовка */
+  word-spacing: 22px;
+  margin-left: 5px;
+}
+
 .bet-button {
+  /* кнопка "Сделать ставку" */
   color: #ffffff;
   font-size: 22px;
-  font-weight: 'Regular';
+  font-weight: 400;
   background-color: transparent;
-  padding: 11px 25px 12px 28px;
+  padding: 12px 32px 12px 32px;
   border: 1px solid #ffffff;
   text-transform: uppercase;
 }
 
 /*--------------- LOTS SECTION ---------------*/
+
 .lots {
+  /* вся секция */
   margin: 0 0 180px 0;
 }
-/* заголовок секции */
+
 .lots__heading {
+  /* заголовок секции */
   font-size: 40px;
   font-weight: 700;
   color: #000000;
   margin: 0 0 27px 90px;
 }
-/* список карточек */
+
 .lots__card-list {
+  /* список карточек */
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  column-gap: 25px;
-  padding: 0 50px 0 50px;
-  margin-bottom: 30px;
+  gap: 25px;
+  margin: 0 50px 30px 50px;
 }
-/* пункт списка карточки */
+
 .lots__card-list-item {
+  /* пункт списка карточки */
   display: flex;
   justify-content: start;
   flex-grow: 1;
   max-width: 430px;
   min-height: 450px;
 }
-/* ссылка, обрамляющая карточку */
+
 .card-link {
+  /* ссылка, обрамляющая карточку */
   display: block;
   text-decoration: none;
   height: 100%;
 }
-/* карточка */
+
 .card {
+  /* карточка */
   height: 100%;
+  width: 100%;
   min-height: 450px;
-  width: 430px;
   position: relative;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
 }
-/* контейнер для контента карточки */
+
 .card__content {
+  /* контейнер для контента карточки */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-/* заголовок карточки */
+
 .card__title {
+  /* заголовок карточки */
   color: #ffffff;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 50px 40px 0 40px;
+  text-decoration: underline;
+  line-height: 120%;
+  z-index: 2;
 }
-/* текст карточки */
+
 .card__text {
+  /* текст карточки */
   color: #ffffff;
   font-size: 20px;
   font-weight: 400;
   padding: 0 40px 50px 40px;
+  line-height: 120%;
+  z-index: 2;
 }
-/* ссылка «Посмотреть больше» */
+
 .lots__look-more-link {
+  /* ссылка «Посмотреть больше» */
   color: #000000;
   font-size: 20px;
   font-weight: 400;
   text-transform: lowercase;
   margin: 0 0 0 90px;
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   padding: 1px;
 }
+
 /* классы, чтобы задать определённый фон каждой из карточек */
 .card_type_film {
   background-image: url('../images/card-lot-01.jpg');
-  background-size: cover;
 }
+
 .card_type_book {
   background-image: url('../images/card-lot-02.jpg');
-  background-size: cover;
 }
+
 .card_type_picture {
   background-image: url('../images/card-lot-03.jpg');
-  background-size: cover;
 }
-/* он уже есть у вас в коде полупрозрачный блок поверх секции */
+
 .overlay {
+  /* полупрозрачный блок с затемнением */
   background-color: rgb(0 0 0 / 0.6);
   height: 100%;
   width: 100%;
   z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /*--------------- ABOUT SECTION ---------------*/
-/* вся секция */
+
 .about {
+  /* вся секция */
   margin: 0 50px 180px 50px;
 }
-/* класс для колонок */
+
 .about__column {
+  /* класс для колонок */
   display: grid;
-  grid-template-columns: 430px 885px;
+  grid-template-columns: 430px 1fr; /* 1fr вместо 885px; */
   grid-template-rows: 487px;
   column-gap: 25px;
 }
-/* контейнер для контейнеа логотипа */
+
 .about__logo-container {
+  /* контейнер для контента логотипа */
   display: flex;
   justify-content: center;
 }
-/* контейнер с логотипом */
+
 .about__logo {
+  /* контейнер с логотипом */
   display: grid;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  width: 240px;
+  background-color: #000000;
   height: 240px;
+  width: 240px;
   border-radius: 50%;
 }
-/* изображение логотипа */
+
 .about__logo-image {
+  /* изображение логотипа */
   width: 148px;
   height: 114px;
 }
-/* контейнер для секции заголовка с текстом */
+
 .about__description-container {
+  /* контейнер для секции заголовка с текстом */
   display: flex;
   flex-direction: column;
 }
-/* заголовок секции */
+
 .about__title {
+  /* заголовок секции */
   display: flex;
   justify-content: start;
   align-items: center;
   text-transform: uppercase;
-  height: 240px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
 }
-/* блок для текстов секции */
+
 .about__text {
+  /* блок для текстов секции */
   display: flex;
   flex-direction: column;
   color: #000000;
   font-size: 20px;
   font-weight: 400;
-}
-/* стили для параграфов блока с текстом */
-.about__text-p {
-  display: flex;
-  margin-bottom: 25px;
-}
-.about__text-p:last-child {
-  margin-bottom: 0px;
+  gap: 25px;
 }
 
-/*--------------- FOOTER ---------------*/
+/*--------------- ПОДВАЛ САЙТА ---------------*/
 /* подвал */
 .footer {
   display: flex;
   justify-content: space-between;
   margin: 0 50px 90px 50px;
-}
-/* потребуется, чтобы выравнивать блок с адресом */
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  font-size: 18px;
-  font-weight: 400;
-  color: #000000;
-  line-height: 24.3px;
-  font-family: 'Raleway', san-serif;
+  padding-top: 3px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-.footer__address a {
-  width: 135px;
-}
->>>>>>> 5381dc646d4665c4f10b8d795ab69fbaf3748c18
->>>>>>> 7d3f3552237d95098315b52574b47a20fd85da7c
-/*  блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом */
 .footer__menu {
+  /*  блок навигации по списку ссылок. Мы рекомендуем окружать список тегом <nav> с этим классом */
   display: flex;
   justify-content: center;
 }
-/* список пунктов меню */
+
 .footer__menu-list {
+  /* список пунктов меню */
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #ffffff;
   text-align: center;
 }
-/* пункт списка меню */
+
 .footer__menu-list-item {
+  /* пункт списка меню */
   color: #000000;
   list-style: none;
 }
-/* ссылка меню */
-.footer__menu-link {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: lowercase;
-}
-/* активная ссылка меню (без подчеркивания) */
-.footer__menu-link_active:active {
-  text-decoration: none;
-}
-/* список ссылок на социальные сети. Можно не добавлять тег <nav>, потому что это ссылки
-на внешние ресурсы */
+
 .footer__social-list {
+  /* список ссылок на социальные сети. Можно не добавлять тег <nav>,
+  потому что это ссылки на внешние ресурсы */
   display: flex;
   justify-content: end;
   list-style: none;
   gap: 48px;
 }
-/* пункт списка ссылок на социальные сети */
+
 .footer__social-list-item {
+  /* пункт списка ссылок на социальные сети */
   list-style: none;
 }
-/* ссылка на социальные сети */
+
 .footer__social-link {
+  /* ссылка на социальные сети */
   text-decoration: none;
 }
-/* иконка социальной сети */
+
 .footer__social-icon {
+  /* иконка социальной сети */
   height: 48px;
+}
+
+.header__address {
+  /* потребуется, чтобы выравнивать блок с адресом */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 2px;
+}
+
+.footer__address {
+  /* потребуется, чтобы выравнивать блок с адресом */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+/*-------------------- ПЕРЕИСПОЛЬЗУЕМЫЕ СТИЛИ --------------------*/
+
+.header__link,
+.footer__link {
+  /* ссылки хедера и футера в навигационных меню */
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  padding: 1px;
+}
+
+.header__link_active,
+.footer__link_active {
+  /* активная ссылка хедера и футера в навигационных меню
+(ссылка без подчеркивания текста) */
+  text-decoration: none;
+  border-bottom: none;
 }
